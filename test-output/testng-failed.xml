@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <listeners>
+    <listener class-name="testNGScripts.testNGListener"/>
+  </listeners>
+  <test name="ChromeTestCases(failed)" parallel="tests">
+    <parameter name="Browser" value="chrome"/>
+    <classes>
+      <class name="crossbrowsers.VerifyTitle">
+        <methods>
+          <include name="verifyPageTitle" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- crossbrowsers.VerifyTitle -->
+    </classes>
+  </test> <!-- ChromeTestCases(failed) -->
+  <test name="IE Testcases(failed)" parallel="tests">
+    <parameter name="Browser" value="ie"/>
+    <classes>
+      <class name="crossbrowsers.VerifyTitle">
+        <methods>
+          <include name="verifyPageTitle" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- crossbrowsers.VerifyTitle -->
+    </classes>
+  </test> <!-- IE Testcases(failed) -->
+</suite> <!-- Failed suite [Suite] -->
