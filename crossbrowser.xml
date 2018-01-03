@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel = "tests">
+<listeners>
+    <listener class-name = "testNGScripts.testNGListener"/>
+</listeners>
+
+
+  <test name="ChromeTestCases">
+  <parameter name = "Browser" value = "chrome"/>
+   <classes>
+    <class name = "crossbrowsers.VerifyTitle"/>
+   </classes>
+  </test> <!-- Test -->
+  
+  <test name="IE Testcases">
+  <parameter name = "Browser" value = "ie"/>
+   <classes>
+    <class name = "crossbrowsers.VerifyTitle"/>
+   </classes>
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->
