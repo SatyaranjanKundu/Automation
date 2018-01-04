@@ -37,9 +37,9 @@ public class GmailLogin {
 	
 	@Test(priority=3, description="This test checks the gmail login")
 	public void gmailLogin(){
-		driver.findElement(By.id("identifierId")).sendKeys("satya.kundu@gmail.com");
+		driver.findElement(By.id("identifierId")).sendKeys("abcdefgh@gmail.com");
 		driver.findElement(By.xpath("//span[@class='RveJvd snByac']")).click();
-		driver.findElement(By.name("password")).sendKeys("Iamlost@123");
+		driver.findElement(By.name("password")).sendKeys("abcdefgh@123");
 		driver.findElement(By.xpath("//span[@class='RveJvd snByac']")).click();
 		
 	}
